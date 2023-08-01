@@ -11,5 +11,5 @@ const server = createServer(yoga);
 // Start the server and you're done!
 const port = Number(process.env.API_PORT) || 4000;
 server.listen(port, () => {
-	console.info("Server is running on http://localhost:4000/graphql");
+	console.info(`Server is running on ${process.env.BASE_URL}/graphql`);
 });
